@@ -1,2 +1,4 @@
 # sort-o_Balloons
-Sorting stuff
+\~Sophia Eiden\~\
+\~Weichen Liu\~\
+\~Josiah Moltz\~
