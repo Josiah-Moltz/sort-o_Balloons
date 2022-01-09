@@ -6,12 +6,16 @@
 # Best and Worst Cases
 
 ## Bubble Sort
-Best: sorted duh
-Worst: anti-sorted
+### Best: Ascending order
+
+### Worst: Descending order
 
 ## Selection Sort
-Literally has none LOL, so consistent!!
+### Best: None
+
+### Worst: None
 
 ## Insertion Sort
-Best: sorted duh -> SUPER GOOD WOO
-Worst: anti-sorted
+### Best: Ascending order
+
+### Worst: Descending order
