@@ -11,6 +11,7 @@
 * Since the list of n elements is already sorted in ascending order, there will be no swaps as we go through n-1 passes. 
 * The runtime complexity is one. 
 ### Worst: Descending order
+* When the list of n elements is in descending order, the number of swaps grow quadratically when sorting. The term that grows the fastest is n^2.  
 * The runtime complexity is n^2. 
 
 ## Selection Sort
@@ -22,6 +23,8 @@
 ## Insertion Sort
 
 ### Best: Ascending order
+* When the list of n elements is already sorted in ascending order, there are no swaps as n-1 passes happen. 
 * The runtime complexity is one. 
 ### Worst: Descending order
+* When the list of n elements is in descending order, the number of swaps grow quadratically when sorting. The term that grows the fastest is n^2.  
 * The runtime complexity is n^2. 
