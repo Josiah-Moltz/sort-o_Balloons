@@ -7,7 +7,7 @@
 
 ## Bubble Sort
 ### Best: Ascending order
-*** yes
+* yes
 ### Worst: Descending order
 
 ## Selection Sort
