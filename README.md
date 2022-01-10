@@ -32,7 +32,7 @@ Thus, an estimation of the total time would be `s(swaps) + c(comparisons)` and s
 * In a certain pass, if the mth element is the first unsorted element (from left to right), we have to make n-1-m comparisons to discover this. It would then take us at most n-m-1 swaps to move the mth element into its proper place.
 ### Best: Ascending order (sorted)
 * To minimize the number of swaps and comparisons, we would want no element to be unsorted (the list would be sorted). This would result in n-1 comparisons, and 0 swaps.
-* THe runtime complexity of this is O(n).
+* The runtime complexity of this is O(n).
 ### Worst: Descending order
 * To maximize the number of swaps and comparisons, we would want every element to be unsorted (the list would be in descending order). This would result in p comparisons on the pth pass, accompanied by p swaps, resulting in (n^2-n)/2 comparisons and (n^2-n)/2 swaps.
 * The runtime complexity is O(n^2).
