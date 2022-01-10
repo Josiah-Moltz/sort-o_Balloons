@@ -8,13 +8,17 @@ import java.util.ArrayList;
 
 public class Driver {
   public static void main(String[] args) {
+    int size = 1000;
     Sorts balloons = new Sorts();
 
     ArrayList al = new ArrayList<Integer>();
-    for ( int i = 0; i < 1000; i++ ) {
-      al.add(1000-i);
+    for ( int i = 0; i < size; i++ ) {
+      al.add(size-i);
     }
 
+
+    System.out.println("SIZE: " + size);
+    System.out.println("==============\n");
     //WORST CASE BOOO!!
     System.out.println("Bubble sort");
     balloons.bubble(al);
