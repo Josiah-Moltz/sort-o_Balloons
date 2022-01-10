@@ -4,7 +4,8 @@
 \~Josiah Moltz\~
 
 # Best and Worst Cases
-* In order to calculate Big Oh, we sum swaps and comparisons. \
+* In order to calculate Big Oh, we sum swaps and comparisons.
+
 The logic behind this is that a swap will likely have a constant time of completion, lets say s, and a comparison will likely have a constant time of completion, lets say c. \
 Thus, an estimation of the total time would be s(swaps) + c(comparisons, and so Big Oh of the total process would be Big Oh of (swaps + comparison). \*\*Constants are NOT included in Big Oh, because Big Oh cares only about the *order* of the function, not the constants attatched to that order.
 
