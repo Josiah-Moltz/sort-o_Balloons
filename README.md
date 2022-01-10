@@ -4,10 +4,10 @@
 \~Josiah Moltz\~
 
 # Best and Worst Cases
-* In order to calculate Big Oh, we sum swaps and comparisons. \
+* In order to calculate Big Oh, we sum swaps passes and comparisons. \
 \
-The logic behind this is that a swap will likely have a constant time of completion, lets say `s`, and a comparison will likely have a constant time of completion, lets say `c`. \
-Thus, an estimation of the total time would be `s(swaps) + c(comparisons)` and so Big Oh of the total process would be Big Oh of `swaps + comparison`. \
+The logic behind this is that a swap will have a constant time of completion (with respect to list size), lets say `s`, and a comparison will likely have a constant time of completion, lets say `c`, and a pass will also have extra not-accounted for background processes with constant time of completion, lets say `p`. \
+Thus, an estimation of the total time would be `s(swaps) + c(comparisons)+p(passes)` and so Big Oh of the total process would be Big Oh of `swaps + comparison + passes`. \
 \*\*Constants are NOT included in Big Oh, because Big Oh cares only about the *order* of the function, not the constants attatched to that order.
 
 ## Bubble Sort
