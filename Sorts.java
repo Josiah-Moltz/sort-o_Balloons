@@ -1,6 +1,6 @@
 // Balloons (Weichen Liu, Josiah Moltz, Sophia Eiden)
 // APCS pd6
-// Lab06 -- SORTS
+// Lab04 -- SORTS
 // 2022-01-06
 // time spent:  0.8 hrs
 
