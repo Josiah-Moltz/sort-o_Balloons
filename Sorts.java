@@ -88,8 +88,8 @@ public class Sorts {
         if ( data.get(i).compareTo( data.get(i-1) ) < 0 ) {
           //diag:
           //System.out.println( "swap indices "+(i-1)+" & "+i+"..." );
-          switchNum += 1;
           data.set( i, data.set( i-1, data.get(i) ) );
+          switchNum += 1;
         }
         else
           break;

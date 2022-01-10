@@ -11,29 +11,31 @@ Thus, an estimation of the total time would be `s(swaps) + c(comparisons)` and s
 \*\*Constants are NOT included in Big Oh, because Big Oh cares only about the *order* of the function, not the constants attatched to that order.
 
 ## Bubble Sort
-* A bubble sort moves through the list comparing each element to its neighbor, and swapping elements not in the proper order. The first pass moves the largest element to the end, and it makes repeated passes in order to move the next largest element to its place.
+* A bubble sort moves through the list comparing each element to its neighbor, and swapping elements not in the proper order. The first pass moves the largest element to the end, and additional passes ar made in order to move the next largest elements into their respective place.
 * The number of comparisons will always be (n-1)^2 where n is the size of the list since each of the n-1 passes will involve n-1 comparisons.
 ### Best: Ascending order (sorted)
 * Since the number of comparisons is fixed, the best case scenario boils down to minimizing swaps, which is done if the list is already sorted. In this scenario 0 swaps are made.
 * The runtime complexity O(n^2).
 ### Worst: Descending order
-* Since the number of comparisons is fixed, the worst case scenario boils down to maximizing swaps, which is doen if the list is "anti-sorted", or placed in largest to smallest order. In this scenario (n^2-n)/2 swaps are made.
+* Since the number of comparisons is fixed, the worst case scenario boils down to maximizing swaps, which is done if the list is "anti-sorted", or placed in largest to smallest order. In this scenario, the largest element has to swap with all n-1 smaller elements after it, the second largest element has to swap will all n-2 smaller elements after it, and so on. Thus there are (n-1)+(n-2)+...+1 = (n^2-n)/2 total swaps required in this scenario.
 * The runtime complexity is O(n^2).
 
 ## Selection Sort
-
+* A selection sort selects the largest element not previously selected and moves that element to its proper position. A swap is always made, even if the element is already in place.
+* On the pth pass, it takes n-p comparisons to find the largest remaining element, after which a swap will always be made. Thus there are (n^2-n)/2 comparisons, and n-1 swaps since there are n-1 passes.
 ### Best and Worst: None
-* There is always only one swap per pass and n-1 passes on a list with n elements. This is because when the elements are swapped, one of the elements is being put in its correct position.
-* The runtime complexity is n
+* Since swaps and comparisons are constant, every case is equivalent!! Thus there are no best/worst cases.
+* Time complexity is O(n^2).
 
 ## Insertion Sort
-
-### Best: Ascending order
-* When the list of n elements is already sorted in ascending order, there are no swaps as n-1 passes happen.
-* The runtime complexity is one.
+* An insertion sort looks through a list from left to right, determines the first point where the list ceases to be sorted, and moves the offending element until the previously searched section is sorted.
+* In a certain pass, if the mth element is the first unsorted element (from left to right), we have to make n-1-m comparisons to discover this. It would then take us at most n-m-1 swaps to move the mth element into its proper place.
+### Best: Ascending order (sorted)
+* To minimize the number of swaps and comparisons, we would want no element to be unsorted (the list would be sorted). This would result in n-1 comparisons, and 0 swaps.
+* THe runtime complexity of this is O(n).
 ### Worst: Descending order
-* When the list of n elements is in descending order, the number of swaps grow quadratically when sorting. The term that grows the fastest is n^2.  
-* The runtime complexity is n^2.
+* To maximize the number of swaps and comparisons, we would want every element to be unsorted (the list would be in descending order). This would result in p comparisons on the pth pass, accompanied by p swaps, resulting in (n^2-n)/2 comparisons and (n^2-n)/2 swaps.
+* The runtime complexity is O(n^2).
 
 # Song of the Week
 Words by F. R. David
