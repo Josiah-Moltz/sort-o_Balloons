@@ -37,7 +37,7 @@ Thus, an estimation of the total time would be `s(swaps) + c(comparisons)` and s
 * To maximize the number of swaps and comparisons, we would want every element to be unsorted (the list would be in descending order). This would result in the pth pass allowing us to discover that the p+1th element is unsorted, resulting in p comparisons and p swaps. Thus in total there (n^2-n)/2 comparisons and (n^2-n)/2 swaps.
 * The runtime complexity is O(n^2).
 
-# EVIDENCE!!
+## EVIDENCE!!
 ```
 Testing worst case on size: 1000
 ==============
