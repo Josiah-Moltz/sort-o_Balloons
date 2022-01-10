@@ -16,10 +16,10 @@ public class Driver {
       al.add(size-i);
     }
 
-
-    System.out.println("SIZE: " + size);
-    System.out.println("==============\n");
     //WORST CASE BOOO!!
+    System.out.println("Testing worst case on size: " + size);
+    System.out.println("==============");
+
     System.out.println("Bubble sort");
     balloons.bubble(al);
     for ( int i = 0; i < 1000; i++ ) {
@@ -36,7 +36,10 @@ public class Driver {
     balloons.insertion(al);
 
     //BEST CASE WOOO!!
-    System.out.println("\nBubble sort");
+    System.out.println("\nTesting best case on size: " + size);
+    System.out.println("==============");
+
+    System.out.println("Bubble sort");
     balloons.bubble(al);
 
     System.out.println("\nSelection sort");
